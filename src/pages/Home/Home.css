@@ -1,0 +1,133 @@
+.container {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+.version {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    font-size: 20px;
+    opacity: 0.5;
+    color: white;
+}
+.title-page {
+    font-family: "Alfa Slab One";
+    color: #fff;
+    transition: color .3s;
+    font-weight: 100;
+    text-align: center;
+    padding-bottom: 0.5em;
+    border-bottom: 2px dashed #2a2e35;
+}
+
+.wrapper .term:first-child {
+    margin-top: 20px;
+}
+.term + .term {
+    margin-top: 20px;
+}
+.wrapper .term {
+    list-style: none;
+    padding: 20px;
+    border-radius: 12px;
+    background: var(--nav-bg);
+    display: flex;
+    align-items: center;
+}
+
+.wrapper .term .contentWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+}
+.wrapper .term .contentWrapper .contentWrapper-title1 {
+    width: 40%;
+    font-family: "Alfa Slab One";
+    color: #b2becd;
+    transition: color .3s;
+}
+.wrapper .term .contentWrapper .contentWrapper-title1 h4 {
+    font-size: 25px;
+    font-weight: 100;
+}
+.wrapper .term .contentWrapper .contentWrapper-title1 p {
+    font-size: 15px;
+    font-weight: 100;
+    color: #d8dfe9;
+}
+.wrapper .term .contentWrapper .contentWrapper-title2 {
+    font-family: sans-serif;
+    font-size: 20px;
+    color: #b2becd;
+    transition: color .3s;
+}
+
+.addWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 120px;
+}
+.addWrapper input {
+    font-family: "Alfa Slab One";
+    color: #b2becd;
+    transition: color .3s;
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #2a2e35;
+    height: 50px;
+    width: 100%;
+}
+.addWrapper input:first-child {
+    margin-right: 100px;
+}
+
+.addWord {
+    width: 100%;
+    border-radius: 12px;
+    border: 2px dashed #2a2e35;
+    height: 50px;
+    font-family: "Alfa Slab One";
+    color: #FFF;
+    transition: color .3s;
+    background: none;
+    cursor: pointer;
+    font-weight: 100;
+    margin-top: 120px;
+}
+.addWord:hover {
+    background: #9166cc;
+    border: none;
+}
+.addWord:disabled {
+    cursor: not-allowed;
+}
+.actions {
+    display: flex;
+
+}
+.actions span {
+    margin-right: 20px;
+}
+.actions span:last-child {
+    margin-right: 0;
+}
+.actions svg {
+    cursor: pointer;
+    height: 20px;
+}
+.actions svg:hover {
+    filter: brightness(50%);
+}
+.actions .delete {
+    stroke: rgb(243, 87, 87);
+}
+.actions .delete path, .edit svg path {
+    fill: none;
+}
+.actions .edit svg {
+    stroke: #b2becd;
+}
